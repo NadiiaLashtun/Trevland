@@ -1,0 +1,61 @@
+:root {
+  --color-primary-dark: #000000;
+  --color-primary-lighter: #000000cc;
+  --color-primary-light: #00000099;
+
+  --color-secondary-dark: #ffffff;
+  --color-secondary-light: #ffffff99;
+
+  --color-brand-dark: #c9453b;
+  --color-brand-light: #2693990a;
+}
+
+/* Base */
+body {
+  background-color: var(--color-secondary-dark);
+  color: var(--color-primary-light);
+}
+
+h2 {
+  color: var(--color-primary-dark);
+}
+
+h3 {
+  color: var(--color-primary-dark);
+}
+
+.accent {
+  color: var(--color-primary-dark);
+}
+
+/* Button */
+.button {
+  background-color: var(--color-brand-dark);
+  color: var(--color-secondary-dark);
+}
+
+/* Links */
+
+/* Hero Page */
+.hero-section {
+  color: var(--color-secondary-dark);
+}
+
+.hero-section p {
+  color: var(--color-secondary-light);
+}
+
+/* Location */
+
+/* Offers */
+
+/* Blog */
+.blog-author {
+  color: var(--color-primary-lighter);
+}
+
+/* Footer */
+footer {
+  background-color: var(--color-brand-light);
+  color: var(--color-primary-dark);
+}

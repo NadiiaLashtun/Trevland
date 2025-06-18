@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=, initial-scale=1.0" />
+    <link rel="stylesheet" href="./src/css/style.css" />
     <title>Document</title>
   </head>
   <body>
@@ -10,28 +11,28 @@
       <nav>
         <a href="/"><img src="./src/img/logo.svg" alt="Logo" /></a>
         <ul>
-          <li><a href="#">Home</a></li>
-          <li><a href="#">Location</a></li>
-          <li><a href="#">Blog</a></li>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Contact</a></li>
+          <li><a href="/">Home</a></li>
+          <li><a href="#location">Location</a></li>
+          <li><a href="#blog">Blog</a></li>
+          <li><a href="#offers">About</a></li>
+          <li><a href="#contacts">Contact</a></li>
         </ul>
-        <button type="button">Booking now</button>
+        <button type="button" class="button">Booking now</button>
       </nav>
     </header>
     <main>
       <!-- Hero Page -->
-      <section>
+      <section class="hero-section">
         <h1>Railtrips To Here, There And Everywhere!</h1>
         <p>
           We all wish to start our year the best way possible and also according
           to a common belief if you have a great start to your.
         </p>
-        <a href="#">Explore more</a>
+        <a href="#" class="button">Explore more</a>
       </section>
 
       <!-- Popular Location -->
-      <section>
+      <section id="location">
         <h2>Popular Location</h2>
         <p>
           For every one of us, travel came first. We’ve spent years living as
@@ -63,7 +64,7 @@
       </section>
 
       <!-- Special Offers -->
-      <section>
+      <section id="offers">
         <h2>Special Offers</h2>
         <p>
           With the New Year comes a refreshing sense of wanderlust, a longing in
@@ -73,33 +74,63 @@
           <li>
             <article>
               <h3>Statue of Liberty.</h3>
+              <div>
+                <p>New York</p>
+                <p>4.8</p>
+              </div>
+              <p>4 Day 5 Nights</p>
+              <p><span class="accent">$450/</span>person</p>
             </article>
           </li>
           <li>
             <article>
               <h3>The Great Wall</h3>
+              <div>
+                <p>China</p>
+                <p>4.9</p>
+              </div>
+              <p>7 Day 8 Nights</p>
+              <p><span class="accent">$850/</span>person</p>
             </article>
           </li>
           <li>
             <article>
               <h3>Dizin</h3>
+              <div>
+                <p>Iran</p>
+                <p>4.6</p>
+              </div>
+              <p>5 Day 6 Nights</p>
+              <p><span class="accent">$550/</span>person</p>
             </article>
           </li>
           <li>
             <article>
               <h3>Sajek Valley</h3>
+              <div>
+                <p>Bangladesh</p>
+                <p>4.7</p>
+              </div>
+              <p>3 Day 4 Nights</p>
+              <p><span class="accent">$400/</span>person</p>
             </article>
           </li>
           <li>
             <article>
               <h3>Osaka Castle</h3>
+              <div>
+                <p>Japan</p>
+                <p>4.7</p>
+              </div>
+              <p>4 Day 5 Nights</p>
+              <p><span class="accent">$700/</span>person</p>
             </article>
           </li>
         </ul>
       </section>
 
       <!-- From Blog & News -->
-      <section>
+      <section id="blog">
         <h2>From Blog & News</h2>
         <p>
           Welcome to Community Conversations, a new interview series featuring
@@ -115,21 +146,21 @@
                 Canada's most beautiful scenery. Turquoise-colored lakes,
                 snow-capped peaks, and glaciers are all easily accessible
               </p>
-              <p>@thomasalva_adison</p>
+              <p class="blog-author">@thomasalva_adison</p>
             </article>
           </li>
           <li>
             <article>
               <h3>The Hiroshima Peace!</h3>
               <p>It was formally opened to the public in August that year.</p>
-              <p>@shova_bd88</p>
+              <p class="blog-author">@shova_bd88</p>
             </article>
           </li>
           <li>
             <article>
               <h3>The faithful prayers!</h3>
               <p>A major pilgrimage center for Hindus, the holy city.</p>
-              <p>@adem/smith</p>
+              <p class="blog-author">@adem/smith</p>
             </article>
           </li>
           <li>
@@ -144,7 +175,7 @@
     </main>
     <footer>
       <a href="/"><img src="./src/img/logo.svg" alt="Logo" /></a>
-      <address>
+      <address id="contacts">
         <ul>
           <li>Contact us</li>
           <li>@shovasatkhira88.com</li>
@@ -168,7 +199,7 @@
       <form>
         <h3>SUBSCRIBE NOW</h3>
         <input type="text" placeholder="Email" />
-        <input type="submit" value="Send" />
+        <input type="submit" value="Send" class="button" />
       </form>
     </footer>
   </body>
