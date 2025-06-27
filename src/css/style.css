@@ -91,6 +91,7 @@ h2,
 h3 {
   color: var(--color-primary-dark);
   font-weight: 500;
+  margin-bottom: 0;
 }
 
 h2 {
@@ -102,17 +103,32 @@ h2 {
 h3 {
   font-size: 24px;
   line-height: 1.5;
-  margin-bottom: 10px;
 }
 
 p {
-  margin-top: 0;
+  margin: 0;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
 }
 
 .accent {
   color: var(--color-primary-dark);
   font-weight: 500;
   line-height: 1.5;
+}
+
+.centered {
+  text-align: center;
+}
+
+.description {
+  text-align: center;
+  margin: 0 auto 50px;
+  max-width: 735px;
 }
 
 /* Button */
@@ -124,31 +140,83 @@ p {
 }
 
 /* Links */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
 /* Header */
+.nav {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+  background-color: gray;
+}
+
 .nav-menu {
   font-weight: 500;
   line-height: 1.5;
+  color: var(--color-secondary-dark);
+
+  display: flex;
+  flex-grow: 1;
+  gap: 50px;
+  justify-content: center;
 }
 
 /* Hero Page */
 .hero-section {
   color: var(--color-secondary-dark);
+  background-color: var(--color-primary-light);
+  background-image: url("../img/hero-img.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
   padding: 286px 0 244px 0;
-  background-color: gray;
+}
+
+.hero-title {
+  max-width: 804px;
+  margin-bottom: 30px;
 }
 
 .hero-section p {
   color: var(--color-secondary-light);
+  max-width: 458px;
+  margin-bottom: 40px;
 }
 
 /* Location */
+.location-cards {
+  display: flex;
+  gap: 30px;
+}
+
+.location-card {
+  width: calc((100%-60px) / 3);
+  padding: 34px 27px;
+}
 
 /* Offers */
+.offers-cards {
+  display: flex;
+  gap: 74px;
+}
+
 .offers-card {
   line-height: 1.5;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  width: calc((100%-90px) / 4);
 }
 
 .offers-card-title {
+  margin-bottom: 8px;
+}
+
+.offers-country-star {
+  display: flex;
+  gap: 50px;
 }
 
 .offers-country {
@@ -161,12 +229,23 @@ p {
 }
 
 /* Blog */
-.blog-card-title {
-  font-size: 20px;
+.blog-cards {
+  display: flex;
+}
+
+.blog-main-card {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
 
 .blog-main-card-title {
   line-height: 1.6;
+}
+
+.blog-main-card-author {
+  font-weight: 500;
 }
 
 .blog-author,
@@ -176,8 +255,20 @@ p {
   line-height: 1.5;
 }
 
-.blog-main-card-author {
-  font-weight: 500;
+.blog-small-cards {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.blog-card {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.blog-card-title {
+  font-size: 20px;
 }
 
 /* Footer */
