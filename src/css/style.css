@@ -61,10 +61,6 @@ body {
   margin: 0;
 }
 
-main {
-  padding: 70px 0;
-}
-
 .section {
   padding: 70px 0;
 }
@@ -140,6 +136,8 @@ ul {
   color: var(--color-secondary-dark);
   font-size: 16px;
   line-height: 1.5;
+  padding: 14px 36px;
+  border-radius: 5px;
 }
 
 /* Links */
@@ -149,11 +147,18 @@ a {
 }
 
 /* Header */
+header {
+  position: absolute;
+  top: 0;
+  left: 0px;
+  width: 100%;
+  padding-top: 35px;
+}
+
 .nav {
   display: flex;
   align-items: center;
   gap: 50px;
-  background-color: gray;
 }
 
 .nav-menu {
