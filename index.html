@@ -10,7 +10,11 @@
     <header>
       <div class="container">
         <nav class="nav">
-          <a href="/"><img src="./src/img/logo.svg" alt="Logo" /></a>
+          <a href="/">
+            <svg width="124px" height="36px">
+              <use href="./src/img/icons.svg#logo"></use>
+            </svg>
+          </a>
           <ul class="nav-menu">
             <li><a href="/">Home</a></li>
             <li><a href="#location">Location</a></li>
@@ -46,23 +50,47 @@
           <ul class="location-cards">
             <li>
               <article class="location-card">
-                <h3>Istanbul, Turkey</h3>
-                <p>Istanbul is a major city in Turkey that straddles Europe.</p>
+                <img
+                  src="./src/img/location/location-1.png"
+                  class="location-card-img"
+                  alt="Istanbul"
+                />
+                <div class="location-card-text">
+                  <h3>Istanbul, Turkey</h3>
+                  <p>
+                    Istanbul is a major city in Turkey that straddles Europe.
+                  </p>
+                </div>
               </article>
             </li>
             <li>
               <article class="location-card">
-                <h3>Kuala Lumpur, malaysia</h3>
-                <p>A 272-step long trek leads you to this century.</p>
+                <img
+                  src="./src/img/location/location-2.png"
+                  class="location-card-img"
+                  alt="Kuala Lumpur"
+                />
+
+                <div class="location-card-text">
+                  <h3>Kuala Lumpur, malaysia</h3>
+                  <p>A 272-step long trek leads you to this century.</p>
+                </div>
               </article>
             </li>
             <li>
               <article class="location-card">
-                <h3>Seoul, South Korea</h3>
-                <p>
-                  South Korea officially the Republic of Korea is a country in
-                  East Asia.
-                </p>
+                <img
+                  src="./src/img/location/location-3.png"
+                  class="location-card-img"
+                  alt="Seoul"
+                />
+                <div class="location-card-text">
+                  <h3>Seoul, South Korea</h3>
+                  <p>
+                    South Korea officially the Republic of Korea is a country in
+                    East Asia.
+                  </p>
+                </div>
               </article>
             </li>
           </ul>
@@ -80,11 +108,27 @@
           <ul class="offers-cards">
             <li>
               <article class="offers-card">
+                <img
+                  src="./src/img/offers/offers-1.png"
+                  alt="Statue of Liberty"
+                />
                 <h3 class="offers-card-title">Statue of Liberty.</h3>
-                <div class="offers-country-star">
-                  <p class="offers-country">New York</p>
-                  <p>4.8</p>
+
+                <div class="offers-rating">
+                  <div class="offers-country">
+                    <svg width="10px" height="16px">
+                      <use href="./src/img/icons.svg#icon-mark"></use>
+                    </svg>
+                    <p>New York</p>
+                  </div>
+                  <div class="offers-star">
+                    <svg width="20px" height="20px">
+                      <use href="./src/img/icons.svg#icon-star"></use>
+                    </svg>
+                    <p>4.8</p>
+                  </div>
                 </div>
+
                 <p class="offers-day">4 Day 5 Nights</p>
                 <p>
                   <span class="accent">$450/</span
@@ -94,11 +138,24 @@
             </li>
             <li>
               <article class="offers-card">
+                <img src="./src/img/offers/offers-2.png" alt="The Great Wall" />
                 <h3 class="offers-card-title">The Great Wall</h3>
-                <div class="offers-country-star">
-                  <p class="offers-country">China</p>
-                  <p>4.9</p>
+
+                <div class="offers-rating">
+                  <div class="offers-country">
+                    <svg width="10px" height="16px">
+                      <use href="./src/img/icons.svg#icon-mark"></use>
+                    </svg>
+                    <p>China</p>
+                  </div>
+                  <div class="offers-star">
+                    <svg width="20px" height="20px">
+                      <use href="./src/img/icons.svg#icon-star"></use>
+                    </svg>
+                    <p>4.9</p>
+                  </div>
                 </div>
+
                 <p class="offers-day">7 Day 8 Nights</p>
                 <p>
                   <span class="accent">$850/</span
@@ -108,11 +165,24 @@
             </li>
             <li>
               <article class="offers-card">
+                <img src="./src/img/offers/offers-3.png" alt="Dizin" />
                 <h3 class="offers-card-title">Dizin</h3>
-                <div class="offers-country-star">
-                  <p class="offers-country">Iran</p>
-                  <p>4.6</p>
+
+                <div class="offers-rating">
+                  <div class="offers-country">
+                    <svg width="10px" height="16px">
+                      <use href="./src/img/icons.svg#icon-mark"></use>
+                    </svg>
+                    <p>Iran</p>
+                  </div>
+                  <div class="offers-star">
+                    <svg width="20px" height="20px">
+                      <use href="./src/img/icons.svg#icon-star"></use>
+                    </svg>
+                    <p>4.6</p>
+                  </div>
                 </div>
+
                 <p class="offers-day">5 Day 6 Nights</p>
                 <p>
                   <span class="accent">$550/</span
@@ -122,11 +192,24 @@
             </li>
             <li>
               <article class="offers-card">
+                <img src="./src/img/offers/offers-4.png" alt="Sajek Valle" />
                 <h3 class="offers-card-title">Sajek Valley</h3>
-                <div class="offers-country-star">
-                  <p class="offers-country">Bangladesh</p>
-                  <p>4.7</p>
+
+                <div class="offers-rating">
+                  <div class="offers-country">
+                    <svg width="10px" height="16px">
+                      <use href="./src/img/icons.svg#icon-mark"></use>
+                    </svg>
+                    <p>Bangladesh</p>
+                  </div>
+                  <div class="offers-star">
+                    <svg width="20px" height="20px">
+                      <use href="./src/img/icons.svg#icon-star"></use>
+                    </svg>
+                    <p>4.7</p>
+                  </div>
                 </div>
+
                 <p class="offers-day">3 Day 4 Nights</p>
                 <p>
                   <span class="accent">$400/</span
@@ -136,11 +219,24 @@
             </li>
             <li>
               <article class="offers-card">
+                <img src="./src/img/offers/offers-5.png" alt="Osaka Castle" />
                 <h3 class="offers-card-title">Osaka Castle</h3>
-                <div class="offers-country-star">
-                  <p class="offers-country">Japan</p>
-                  <p>4.7</p>
+
+                <div class="offers-rating">
+                  <div class="offers-country">
+                    <svg width="10px" height="16px">
+                      <use href="./src/img/icons.svg#icon-mark"></use>
+                    </svg>
+                    <p>Japan</p>
+                  </div>
+                  <div class="offers-star">
+                    <svg width="20px" height="20px">
+                      <use href="./src/img/icons.svg#icon-star"></use>
+                    </svg>
+                    <p>4.7</p>
+                  </div>
                 </div>
+
                 <p class="offers-day">4 Day 5 Nights</p>
                 <p>
                   <span class="accent">$700/</span
@@ -149,6 +245,13 @@
               </article>
             </li>
           </ul>
+
+          <svg width="12px" height="10px">
+            <use href="./src/img/icons.svg#icon-arrow"></use>
+          </svg>
+          <svg width="12px" height="10px">
+            <use href="./src/img/icons.svg#icon-arrow"></use>
+          </svg>
         </div>
       </section>
 
@@ -162,6 +265,11 @@
           </p>
           <div class="blog-cards">
             <article class="blog-main-card">
+              <img
+                src="./src/img/blog/blog-1.png"
+                class="blog-main-card-img"
+                alt="Banff National Park"
+              />
               <h3 class="blog-card-title blog-main-card-title">
                 Banff National Park
               </h3>
@@ -179,25 +287,43 @@
             <ul class="blog-small-cards">
               <li>
                 <article class="blog-card">
-                  <h3 class="blog-card-title">The Hiroshima Peace!</h3>
-                  <p>
-                    It was formally opened to the public in August that year.
-                  </p>
-                  <p class="blog-author">@shova_bd88</p>
+                  <img
+                    src="./src/img/blog/blog-2.png"
+                    alt="BThe Hiroshima Peace!"
+                  />
+                  <div class="blog-card-text">
+                    <h3 class="blog-card-title">The Hiroshima Peace!</h3>
+                    <p>
+                      It was formally opened to the public in August that year.
+                    </p>
+                    <p class="blog-author">@shova_bd88</p>
+                  </div>
                 </article>
               </li>
               <li>
                 <article class="blog-card">
-                  <h3 class="blog-card-title">The faithful prayers!</h3>
-                  <p>A major pilgrimage center for Hindus, the holy city.</p>
-                  <p class="blog-author">@adem/smith</p>
+                  <img
+                    src="./src/img/blog/blog-3.png"
+                    alt="The faitful prayers!"
+                  />
+                  <div class="blog-card-text">
+                    <h3 class="blog-card-title">The faithful prayers!</h3>
+                    <p>A major pilgrimage center for Hindus, the holy city.</p>
+                    <p class="blog-author">@adem/smith</p>
+                  </div>
                 </article>
               </li>
               <li>
                 <article class="blog-card">
-                  <h3 class="blog-card-title">Colourful waters!</h3>
-                  <p>Forest-driven water and energy cycles are poorly.</p>
-                  <p>@jhon7leew</p>
+                  <img
+                    src="./src/img/blog/blog-4.png"
+                    alt="Colourful waters!"
+                  />
+                  <div class="blog-card-text">
+                    <h3 class="blog-card-title">Colourful waters!</h3>
+                    <p>Forest-driven water and energy cycles are poorly.</p>
+                    <p>@jhon7leew</p>
+                  </div>
                 </article>
               </li>
             </ul>
@@ -208,15 +334,43 @@
 
     <footer>
       <div class="container">
-        <a href="/"><img src="./src/img/logo.svg" alt="Logo" /></a>
+        <a href="/" class="footer-logo">
+          <svg width="124px" height="36px">
+            <use href="./src/img/icons.svg#logo"></use>
+          </svg>
+        </a>
         <address class="footer-contacts" id="contacts ">
           <ul>
             <li>Contact us</li>
             <li>@shovasatkhira88.com</li>
-            <li><a href="#">Facebook</a></li>
-            <li><a href="#">Instagram</a></li>
-            <li><a href="#">Twiter</a></li>
-            <li><a href="#">Google</a></li>
+            <li>
+              <a href="#">
+                <svg width="20px" height="20px">
+                  <use href="./src/img/icons.svg#icon-facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <svg width="20px" height="20px">
+                  <use href="./src/img/icons.svg#icon-instagram"></use>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <svg width="20px" height="20px">
+                  <use href="./src/img/icons.svg#icon-twiter"></use>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <svg width="20px" height="20px">
+                  <use href="./src/img/icons.svg#icon-google"></use>
+                </svg>
+              </a>
+            </li>
           </ul>
         </address>
         <ul class="footer-nav">
