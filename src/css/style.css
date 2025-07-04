@@ -144,6 +144,7 @@ ul {
 a {
   text-decoration: none;
   color: inherit;
+  display: inline-block;
 }
 
 /* Header */
@@ -331,6 +332,14 @@ footer {
   color: var(--color-primary-dark);
   font-size: 16px;
   line-height: 1.5;
+  padding: 70px 0;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 24px;
+  flex-wrap: wrap;
 }
 
 .footer-logo {
@@ -341,10 +350,20 @@ footer {
 .footer-contacts {
   line-height: 1.6;
   fill: yellow;
+  gap: 40px;
+}
+
+.address-info {
+  display: flex;
 }
 
 .footer-nav {
   font-weight: 500;
+  display: flex;
+  gap: 24px;
+  flex-grow: 1;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
 }
 
 .footer-title {
