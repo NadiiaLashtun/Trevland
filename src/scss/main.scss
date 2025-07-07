@@ -1,0 +1,20 @@
+@import "./utils/variables";
+@import "./utils/fonts";
+@import "./base";
+@import "./utils/utils";
+@import "./utils/texts";
+
+@import "./components/buttons";
+@import "./components/links";
+@import "./components/cards";
+@import "./components/location-card";
+@import "./components/offer-card";
+
+@import "./layouts/_section";
+@import "./layouts/header";
+@import "./layouts/hero-section";
+@import "./layouts/location-section";
+@import "./layouts/offers-section";
+@import "./layouts/blog-section";
+@import "./layouts/footer";
+@import "./layouts/forms";

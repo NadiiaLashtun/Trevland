@@ -1,0 +1,19 @@
+/* Subscribe form */
+.form {
+  &__email {
+    padding: 14px 20px;
+    background-color: transparent;
+    border: 1px solid var(--color-shadow);
+    border-radius: 5px;
+    box-shadow: 0 0 10px 10px var(--color-shadow-light);
+
+    &:focus {
+      outline: 2px solid var(--color-brand-light);
+      outline-offset: 1px;
+    }
+  }
+
+  &__button {
+    padding: 10px 32px;
+  }
+}

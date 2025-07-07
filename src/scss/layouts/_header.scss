@@ -1,0 +1,25 @@
+/* Header */
+.header {
+  position: absolute;
+  top: 0;
+  left: 0px;
+  width: 100%;
+  padding-top: 35px;
+
+  &__nav {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+  }
+
+  &__menu {
+    font-weight: 500;
+    line-height: 1.5;
+    color: var(--color-secondary-dark);
+
+    display: flex;
+    flex-grow: 1;
+    gap: 50px;
+    justify-content: center;
+  }
+}

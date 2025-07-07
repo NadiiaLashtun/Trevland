@@ -1,0 +1,9 @@
+/* Offers */
+.offers-section {
+  &__cards {
+    display: flex;
+    gap: 74px;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+}

@@ -1,0 +1,48 @@
+/* Footer */
+.footer {
+  background-color: var(--color-brand-light);
+  color: var(--color-primary-dark);
+  font-size: 16px;
+  line-height: 1.5;
+  padding: 70px 0;
+
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    gap: 24px;
+    flex-wrap: wrap;
+  }
+
+  &__logo {
+    fill: var(--color-brand-dark);
+    stroke: var(--color-brand-dark);
+  }
+
+  &__contacts {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__address {
+    line-height: 1.6;
+    fill: yellow;
+    gap: 40px;
+  }
+
+  &__nav {
+    font-weight: 500;
+    display: flex;
+    gap: 24px;
+    flex-grow: 1;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+  }
+
+  &__title {
+    font-family: "Roboto";
+    font-size: 20px;
+    font-weight: 500;
+    text-transform: uppercase;
+    margin-bottom: 42px;
+  }
+}

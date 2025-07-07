@@ -1,0 +1,12 @@
+/* Links */
+a {
+  text-decoration: none;
+  color: inherit;
+  display: inline-block;
+  transition: color 0.3s ease-in-out;
+}
+
+a:hover {
+  cursor: pointer;
+  color: var(--color-brand-dark);
+}
