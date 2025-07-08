@@ -13,4 +13,21 @@
   --color-border: #0000001a;
   --color-shadow: #00000014;
   --color-shadow-light: #00000004;
+
+  --color-twitter: #00b0ed; /*00C3FF*/
+  --color-facebook: linear-gradient(
+    #e66465,
+    #9198e5
+  ); /*#3b5999;
+  FAE100 FCB720 FF1C74 6C1CD1
+
+  --color-instagram: linearGradient(FAE100 FCB720 FF1C74 6C1CD1)
+
+   --color-google: #273B7A;*/
 }
+
+$bp-mobile: 480px;
+$bp-tablet: 768px;
+$bp-desctop: 1280px;
+
+$color-facebook: linear-gradient(#e66465, #9198e5);

@@ -10,9 +10,9 @@
     <header class="header">
       <div class="container">
         <nav class="header__nav">
-          <a href="/">
+          <a href="/" class="header__logo">
             <svg width="124px" height="36px">
-              <use href="./src/img/icons.svg#logo"></use>
+              <use href="./src/img/icons.svg#icon-logo"></use>
             </svg>
           </a>
           <ul class="header__menu">
@@ -22,7 +22,14 @@
             <li><a href="#offers">About</a></li>
             <li><a href="#contacts">Contact</a></li>
           </ul>
-          <button type="button" class="button">Booking now</button>
+          <button type="button" class="header__button button">
+            Booking now
+          </button>
+          <button type="button" class="header__burger">
+            <svg width="24px" height="24px">
+              <use href="./src/img/icons.svg#icon-burger"></use>
+            </svg>
+          </button>
         </nav>
       </div>
     </header>
@@ -51,7 +58,7 @@
           </p>
           <ul class="location-section__cards">
             <li>
-              <article class="location-card card">
+              <article class="location-card shadow">
                 <img
                   src="./src/img/location/location-1.png"
                   class="location-card__img"
@@ -66,7 +73,7 @@
               </article>
             </li>
             <li>
-              <article class="location-card card">
+              <article class="location-card shadow">
                 <img
                   src="./src/img/location/location-2.png"
                   class="location-card__img"
@@ -80,7 +87,7 @@
               </article>
             </li>
             <li>
-              <article class="location-card card">
+              <article class="location-card shadow">
                 <img
                   src="./src/img/location/location-3.png"
                   class="location-card__img"
@@ -109,7 +116,7 @@
           </p>
           <ul class="offers-section__cards">
             <li>
-              <article class="offer-card card">
+              <article class="offer-card shadow">
                 <img
                   src="./src/img/offers/offers-1.png"
                   class="offer-card__img"
@@ -142,7 +149,7 @@
               </article>
             </li>
             <li>
-              <article class="offer-card card">
+              <article class="offer-card shadow">
                 <img
                   src="./src/img/offers/offers-2.png"
                   class="offer-card__img"
@@ -175,7 +182,7 @@
               </article>
             </li>
             <li>
-              <article class="offer-card card">
+              <article class="offer-card shadow">
                 <img
                   src="./src/img/offers/offers-3.png"
                   class="offer-card__img"
@@ -208,7 +215,7 @@
               </article>
             </li>
             <li>
-              <article class="offer-card card">
+              <article class="offer-card shadow">
                 <img
                   src="./src/img/offers/offers-4.png"
                   class="offer-card__img"
@@ -241,7 +248,7 @@
               </article>
             </li>
             <li>
-              <article class="offer-card card">
+              <article class="offer-card shadow">
                 <img
                   src="./src/img/offers/offers-5.png"
                   class="offer-card__img"
@@ -369,36 +376,38 @@
           <div class="footer__contacts">
             <a href="/" class="footer__logo">
               <svg width="124px" height="36px">
-                <use href="./src/img/icons.svg#logo"></use>
+                <use href="./src/img/icons.svg#icon-logo"></use>
               </svg>
             </a>
             <address class="footer__address" id="contacts ">
-              <ul>
+              <ul class="footer__address-site">
                 <li>Contact us</li>
                 <li><a href="#">@shovasatkhira88.com</a></li>
+              </ul>
+              <ul class="footer__social-media">
                 <li>
-                  <a href="#">
+                  <a href="#" class="icon shadow">
                     <svg width="20px" height="20px">
                       <use href="./src/img/icons.svg#icon-facebook"></use>
                     </svg>
                   </a>
                 </li>
                 <li>
-                  <a href="#">
+                  <a href="#" class="icon shadow">
                     <svg width="20px" height="20px">
                       <use href="./src/img/icons.svg#icon-instagram"></use>
                     </svg>
                   </a>
                 </li>
                 <li>
-                  <a href="#">
+                  <a href="#" class="icon shadow">
                     <svg width="20px" height="20px">
                       <use href="./src/img/icons.svg#icon-twiter"></use>
                     </svg>
                   </a>
                 </li>
                 <li>
-                  <a href="#">
+                  <a href="#" class="icon shadow">
                     <svg width="20px" height="20px">
                       <use href="./src/img/icons.svg#icon-google"></use>
                     </svg>
@@ -408,14 +417,14 @@
             </address>
           </div>
           <nav class="footer__nav">
-            <ul>
+            <ul class="footer__nav-items">
               <li><a href="#">Services</a></li>
               <li><a href="#">About</a></li>
               <li><a href="#">Our story</a></li>
               <li><a href="#">Benefits</a></li>
               <li><a href="#">Branding</a></li>
             </ul>
-            <ul>
+            <ul class="footer__nav-items">
               <li><a href="#">Legal</a></li>
               <li><a href="#">Terms & Conditions</a></li>
               <li><a href="#">Privecy Policy</a></li>
