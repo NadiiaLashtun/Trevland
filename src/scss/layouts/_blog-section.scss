@@ -2,6 +2,7 @@
 .blog-section {
   &__cards {
     display: flex;
+    justify-content: center;
     gap: 32px;
     flex-wrap: wrap;
   }
@@ -18,6 +19,7 @@
   display: flex;
   gap: 30px;
   flex-basis: calc((100% - 32px) / 2);
+  flex-wrap: wrap;
 
   &--big {
     max-width: 554px;
