@@ -4,7 +4,8 @@
   top: 0;
   width: 100%;
   height: 100%;
-  background-color: var(--color-brand-light);
+  background-color: var(--color-secondary-dark);
+  opacity: 0.9;
   transform: translateX(100%);
   transition: transform 0.3s ease-in-out;
 
