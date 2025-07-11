@@ -1,9 +1,10 @@
 /* Offers */
 .offers-section {
-  &__cards {
+  overflow: hidden;
+
+  &__list {
+    margin-bottom: 50px;
     display: flex;
-    gap: 74px;
     justify-content: center;
-    flex-wrap: wrap;
   }
 }

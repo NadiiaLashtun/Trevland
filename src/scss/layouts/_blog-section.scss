@@ -19,7 +19,6 @@
   display: flex;
   gap: 30px;
   flex-basis: calc((100% - 32px) / 2);
-  flex-wrap: wrap;
 
   &--big {
     max-width: 554px;
