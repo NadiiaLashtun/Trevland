@@ -23,13 +23,13 @@
     line-height: 1.5;
     color: var(--color-secondary-dark);
 
-    display: flex;
-    flex-grow: 1;
-    gap: 50px;
-    justify-content: center;
+    display: none;
+    @media screen and (min-width: $bp-desctop) {
+      display: flex;
 
-    @media screen and (max-width: $bp-desctop) {
-      display: none;
+      flex-grow: 1;
+      gap: 50px;
+      justify-content: center;
     }
   }
 

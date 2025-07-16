@@ -1,3 +1,11 @@
 .section {
-  padding: 70px 0;
+  padding: 35px 0;
+
+  @media screen and (min-width: $bp-tablet) {
+    padding: 70px 0;
+  }
+
+  @media screen and (max-width: $bp-tablet-l) and (orientation: landscape) {
+    padding: 35px;
+  }
 }

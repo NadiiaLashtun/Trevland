@@ -6,10 +6,17 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 75%;
-  padding: 286px 0 244px 0;
+  padding: 200px 0 140px;
+  // padding: 240px 0 220px 0;
   text-align: center;
+  height: 100vh;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 
   @media screen and (min-width: $bp-mobile) {
+    // padding: 286px 0 244px 0;
     text-align: left;
   }
 
@@ -25,11 +32,20 @@
     @media screen and (min-width: $bp-tablet) {
       font-size: 65px;
     }
+
+    @media screen and (max-width: $bp-tablet-l) and (orientation: landscape) {
+      font-size: 38px;
+      margin-bottom: 16px;
+    }
   }
 
   &__text {
     color: var(--color-secondary-light);
     max-width: 458px;
     margin-bottom: 40px;
+
+    @media screen and (max-width: $bp-tablet-l) and (orientation: landscape) {
+      margin-bottom: 20px;
+    }
   }
 }
