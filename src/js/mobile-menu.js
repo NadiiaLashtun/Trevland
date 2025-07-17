@@ -1,11 +1,25 @@
-let mobileMenu = document.querySelector(".mobile-menu");
-let btnOpen = document.querySelector(".menu-btn-open");
-let btnClose = document.querySelector(".menu-btn-close");
+let burger = document.querySelector(".header__burger");
+let menu = document.querySelector(".header__menu");
+let links = document.querySelectorAll(".header__list");
 
 function toggleMobileMenu() {
-  mobileMenu.classList.toggle("is-open");
-  console.log("toggle menu");
+  burger.classList.toggle("is-open");
+  menu.classList.toggle("is-open");
 }
 
-btnOpen.addEventListener("click", toggleMobileMenu);
-btnClose.addEventListener("click", toggleMobileMenu);
+/* Open/close mobile menu */
+burger.addEventListener("click", toggleMobileMenu);
+
+/* Close menu after choose link */
+links.forEach((link) => {
+  link.addEventListener("click", () => {
+    toggleMobileMenu();
+  });
+});
+
+/* Close menu after click on free space */
+menu.addEventListener("click", (event) => {
+  if (event.target === menu) {
+    toggleMobileMenu();
+  }
+});

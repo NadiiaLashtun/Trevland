@@ -10,7 +10,6 @@
     display: flex;
     align-items: center;
     gap: 50px;
-
     justify-content: space-between;
   }
 
@@ -21,15 +20,48 @@
   &__menu {
     font-weight: 500;
     line-height: 1.5;
-    color: var(--color-secondary-dark);
 
-    display: none;
+    position: fixed;
+    top: 0;
+    left: 100%;
+    width: 100%;
+    height: 100%;
+    background-color: var(--color-secondary-dark);
+    opacity: 0.97;
+    transition: all 0.5s ease;
+    overflow: auto;
+    z-index: 2;
+
+    &.is-open {
+      left: 0;
+    }
+
     @media screen and (min-width: $bp-desctop) {
+      position: static;
       display: flex;
-
-      flex-grow: 1;
-      gap: 50px;
+      flex-direction: row;
+      align-items: center;
       justify-content: center;
+      gap: 50px;
+      background-color: transparent;
+      opacity: 1;
+      color: var(--color-secondary-dark);
+      transition: none;
+      width: auto;
+    }
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    height: 100%;
+
+    @media screen and (min-width: $bp-desctop) {
+      flex-direction: row;
+      gap: 50px;
     }
   }
 
@@ -41,13 +73,61 @@
   }
 
   &__burger {
-    fill: var(--color-secondary-dark);
-    background-color: transparent;
-    border: none;
-    cursor: pointer;
+    display: block;
+    position: relative;
+    width: 30px;
+    height: 20px;
+    z-index: 3;
 
     @media screen and (min-width: $bp-desctop) {
       display: none;
+    }
+
+    &-line {
+      background-color: var(--color-secondary-dark);
+      position: absolute;
+      width: 100%;
+      height: 3px;
+      left: 0;
+      top: 9px;
+      transition: all 0.3s ease-in-out;
+    }
+
+    &::after,
+    &::before {
+      content: "";
+      background-color: var(--color-secondary-dark);
+      position: absolute;
+      width: 100%;
+      height: 3px;
+      left: 0;
+      transition: all 0.3s ease-in-out;
+    }
+
+    &::before {
+      top: 0;
+    }
+
+    &::after {
+      bottom: 0;
+    }
+
+    &.is-open {
+      &::before {
+        background-color: var(--color-primary-dark);
+        transform: rotate(-45deg);
+        top: 8px;
+      }
+
+      &::after {
+        background-color: var(--color-primary-dark);
+        transform: rotate(45deg);
+        bottom: 9px;
+      }
+
+      .header__burger-line {
+        transform: scale(0);
+      }
     }
   }
 }
