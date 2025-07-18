@@ -16,8 +16,13 @@
   justify-content: center;
 
   @media screen and (min-width: $bp-mobile) {
-    // padding: 286px 0 244px 0;
     text-align: left;
+  }
+
+  @media screen and (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: url("../img/hero-img@2x.jpg");
   }
 
   &__title {

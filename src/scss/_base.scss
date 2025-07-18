@@ -2,7 +2,7 @@
 * {
   box-sizing: border-box;
 
-  @media screen and (min-width: $bp-desctop) {
+  @media screen and (min-width: $bp-tablet-l) {
     scroll-behavior: smooth;
   }
 }
@@ -90,4 +90,8 @@ img {
   width: 100%;
   height: auto;
   object-fit: cover;
+}
+
+svg {
+  vertical-align: middle;
 }

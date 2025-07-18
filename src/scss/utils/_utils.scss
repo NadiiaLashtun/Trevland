@@ -7,3 +7,12 @@
   clip-path: inset(50%);
   white-space: nowrap;
 }
+
+.no-scroll {
+  overflow: hidden;
+  //height: 100vh;
+
+  @media screen and (min-width: $bp-tablet-l) {
+    overflow: auto;
+  }
+}

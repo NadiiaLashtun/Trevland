@@ -2,12 +2,13 @@ let burger = document.querySelector(".header__burger");
 let menu = document.querySelector(".header__menu");
 let links = document.querySelectorAll(".header__list");
 
+/* Open/close mobile menu */
 function toggleMobileMenu() {
   burger.classList.toggle("is-open");
   menu.classList.toggle("is-open");
+  document.body.classList.toggle("no-scroll");
 }
 
-/* Open/close mobile menu */
 burger.addEventListener("click", toggleMobileMenu);
 
 /* Close menu after choose link */

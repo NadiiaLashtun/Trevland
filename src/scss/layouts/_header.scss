@@ -15,6 +15,8 @@
 
   &__logo {
     fill: var(--color-secondary-dark);
+    width: 124px;
+    height: 36px;
   }
 
   &__menu {
@@ -36,7 +38,7 @@
       left: 0;
     }
 
-    @media screen and (min-width: $bp-desctop) {
+    @media screen and (min-width: $bp-tablet-l) {
       position: static;
       display: flex;
       flex-direction: row;
@@ -59,7 +61,7 @@
     gap: 40px;
     height: 100%;
 
-    @media screen and (min-width: $bp-desctop) {
+    @media screen and (min-width: $bp-tablet-l) {
       flex-direction: row;
       gap: 50px;
     }
@@ -67,7 +69,7 @@
 
   &__button {
     display: none;
-    @media screen and (min-width: $bp-desctop) {
+    @media screen and (min-width: $bp-tablet-l) {
       display: block;
     }
   }
@@ -79,7 +81,7 @@
     height: 20px;
     z-index: 3;
 
-    @media screen and (min-width: $bp-desctop) {
+    @media screen and (min-width: $bp-tablet-l) {
       display: none;
     }
 
